@@ -115,7 +115,7 @@ namespace Tracker.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditSeedSubmit(int[] seedIds, string[] seeds, string[]hardinessZone, DateTime[] dateplanted)
+        public IActionResult EditSeedSubmit(int[] seedIds, string[] seeds, string[]hardinessZone, DateTime[] dateplanted, string[] waterSchedule)
         {
 
             for (int i = 0; i < seedIds.Length; i++)
@@ -124,6 +124,7 @@ namespace Tracker.Controllers
                 seed.Name = seeds[i];
                 seed.HardinessZone = hardinessZone[i];
                 seed.DatePlanted = dateplanted[i];
+                seed.WaterSchedule = waterSchedule[i];
                 
             }
 

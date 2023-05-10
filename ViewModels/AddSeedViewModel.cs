@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Tracker.Models;
 
 
@@ -8,13 +9,17 @@ namespace Tracker.ViewModels
     {
         public int SeedId { get; set; }
         public int BedId { get; set; }
-
+        //[Required(ErrorMessage = "Name is required ")]
         public string? Name { get; set; }
         public Bed? Bed { get; set; }
 
+        //[Required(ErrorMessage = "Water Date is required ")]
         public DateTime DatePlanted { get; set; }
 
+        //[Required(ErrorMessage = "Hardiness zone is required ")]
         public string? HardinessZone { get; set; }
+
+        //[Required(ErrorMessage = "Water schedule is required ")]
         public string? WaterSchedule { get; set; }
 
         public List<SelectListItem>? Seeds { get; set; }

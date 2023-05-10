@@ -5,7 +5,7 @@
 
 @inject UserManager<IdentityUser> UserManager
 
-<div class="text-center" style="background-color: #D1CA08">
+<div class="text-center" >
     <h1>Keep Your Garden Beds Hydrated! </h1>
 
     @if (UserManager.GetUserId(User) != null)
@@ -13,7 +13,7 @@
         <h2>Watering Reminder:</h2>
     }
 
-    <div style=" border: 1px solid black; display: flex; flex-direction: column; align-items: center; justify-content: flex-start">
+    <div style=" background-color: beige; border: 1px solid black; display: flex; flex-direction: column; align-items: center; justify-content: flex-start," >
         @foreach (var error in ViewBag.errors)
         {
             <p style=" color: red ">@error</p>
@@ -21,21 +21,21 @@
 
         @foreach (var message in ViewBag.messages)
         {
-            <p style=" color: green">@message</p>
+            <p style=" color: darkgreen">@message</p>
         }
     </div>
-    <center>
+    <center class="img-bg">
         <img src="https://media.cnn.com/api/v1/images/stellar/prod/230405132308-01-gardening-stock.jpg?c=16x9&q=h_720,w_1280,c_fill/f_webp">
     </center>
 
-    @if (UserManager.GetUserId(User) == null)
-    {
+    @*@if (UserManager.GetUserId(User) == null)
+    {*@
        <div class="centered">
            Garden tracker helps you maintain a fixed watering schedule for your garden beds.
            It lets your enter all your seeds and set up a friendly schedule that keeps you reminded so you
            never forget to tend to you garden
        </div>
-    }
+    @*}*@
     
     @*  <center> <p class="btn btn-secondary"> Let's get started!</p></center>*@
     <br />
