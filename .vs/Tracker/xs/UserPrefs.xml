@@ -1,14 +1,21 @@
 ﻿<Properties StartupConfiguration="{6D03547B-F10B-4331-9D19-2856BBE811E0}|WaterReminder">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Tracker PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
     <Files>
-      <File FileName="Controllers/BedController.cs" Line="53" Column="40" />
-      <File FileName="Controllers/SeedController.cs" Line="26" Column="1" />
-      <File FileName="Program.cs" Line="14" Column="1" />
-      <File FileName="Models/Bed.cs" Line="10" Column="54" />
+      <File FileName="Controllers/BedController.cs" />
+      <File FileName="Controllers/SeedController.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Models/Bed.cs" />
       <File FileName="Controllers/HomeController.cs" Line="29" Column="1" />
-      <File FileName="Controllers/SearchController.cs" Line="19" Column="98" />
-      <File FileName="Views/Search/Index.cshtml" Line="41" Column="1" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="48" Column="180" />
+      <File FileName="Controllers/SearchController.cs" />
+      <File FileName="Views/Search/Index.cshtml" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +25,9 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
@@ -29,16 +38,6 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Tracker PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
 </Properties>
