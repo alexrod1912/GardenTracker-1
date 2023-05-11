@@ -16,9 +16,16 @@
                     <h1>Bed: @seed.Name</h1>
                     <label>Name:</label>
                     <input type="text" name="seeds[]" value="@seed.Name" />
+                    <br />
+                    <label>Hardiness Zone:</label>
                     <input type="text" name="hardinessZone[]" value="@seed.HardinessZone" />
+                    <br />
+                    <label>Date watered:</label>
                     <input type="text" name="datePlanted[]" value="@seed.DatePlanted" />
-
+                    <br />
+                    <label>Days between Watering</label>
+                    <input type="text" name="datePlanted[]" value="@seed.WaterSchedule" />
+                    <br />
                     <input type="hidden" name="seedIds[]" value="@seed.Id" />
                 </div>
             }

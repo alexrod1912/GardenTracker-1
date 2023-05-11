@@ -21,12 +21,13 @@ body {
 }
 
 .khaki {
-    background-color: #d1ca08;
+    background-color: #D1CA08;
 }
 
 .image-bg {
     background-image: url("https://www.economical.com/ECOCOM/media/EcoComMedia/Site%20imagery/Blog/Blog%20entries/Home-GardenTips-Blog_945x525.jpg?ext=.jpg");
     opacity: 0.7;
+    width: 100%;
 }
 
 .centered {
