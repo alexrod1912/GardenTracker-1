@@ -11,9 +11,9 @@
                 }
                 else
                 {
-                    <table class="table">
+                    <table class="table" style="background-color: beige; border: 1px; border-radius: 25px">
                         <tr>
-                            <th>Name</th>
+                            <th>Id</th>
                             <th>Seed</th>
                             <th>Edit</th>
                             <th>Delete</th>
@@ -40,10 +40,10 @@
 
                     </table>
                 }
-                <p><a asp-controller="Seed" asp-action="Add" class="btn btn-light">Add Seed</a></p>
+                <p><a asp-controller="Seed" asp-action="Add" class="btn btn-light"style="background-color: beige">Add Seed</a></p>
 
-                <button type="submit" formaction="@Url.Action("DeleteSeed", "Seed")" class="btn btn-light">Delete Selected Seeds</button>
-                <button type="submit" formaction="@Url.Action("GatherSeeds", "Seed")" class="btn btn-light">Edit Selected Seeds</button>
+                <button type="submit" formaction="@Url.Action("DeleteSeed", "Seed")" class="btn btn-light" style="background-color: beige">Delete Selected Seeds</button>
+                <button type="submit" formaction="@Url.Action("GatherSeeds", "Seed")" class="btn btn-light" style="background-color: beige">Edit Selected Seeds</button>
 
 
 

@@ -124,7 +124,7 @@ namespace Tracker.Controllers
                 seed.Name = seeds[i];
                 seed.HardinessZone = hardinessZone[i];
                 seed.DatePlanted = dateplanted[i];
-                seed.WaterSchedule = waterSchedule[i];
+                //seed.WaterSchedule = waterSchedule[i];
                 
             }
 

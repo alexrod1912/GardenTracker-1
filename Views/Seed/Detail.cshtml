@@ -3,7 +3,7 @@
 <h1>Seed Detail</h1>
 
 <body style="background-color: #D1CA08 ">
-    <table class="table">
+    <div class="table" style="border: 2px solid; border-radius: 10px; background-color: beige">
 
 
         <b>Seed Name: </b>
@@ -21,7 +21,8 @@
         <b>Garden Beds this seed is planted in: </b>
         @Model.BedText
 
-    </table>
+    </div>
+    <br />
+    <a asp-controller="Bed" asp-action="AddBedToSeed" asp-route-id="@Model.SeedId" class="btn btn-light" style="background-color: beige; border: 1px solid">Add garden beds to this seed</a>
 
-    <a asp-controller="Bed" asp-action="AddBedToSeed" asp-route-id="@Model.SeedId" class="btn btn-light">Add garden beds to this seed</a>
-    </body>
+</body>

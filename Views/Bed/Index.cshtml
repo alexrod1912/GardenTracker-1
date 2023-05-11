@@ -12,7 +12,7 @@
                 }
                 else
                 {
-                    <table class="table">
+                    <table class="table" style="background-color: beige; border: 1px; border-radius: 25px">
                         <tr>
                             <th>Id
                             <th>Garden Bed</th>
@@ -40,11 +40,11 @@
                         }
                     </table>
                 }
-                <p><a asp-controller="Bed" asp-action="Add" class="btn btn-light">Add Garden</a></p>
+                <p><a asp-controller="Bed" asp-action="Add" class="btn btn-light" style="background-color: beige">Add Garden</a></p>
 
-                <button type="submit" formaction="@Url.Action("DeleteBed", "Bed")" class="btn btn-light">Delete Selected Gardens</button>
+                <button type="submit" formaction="@Url.Action("DeleteBed", "Bed")" class="btn btn-light" style="background-color: beige">Delete Selected Gardens</button>
 
-                <button type="submit" formaction="@Url.Action("GatherBeds", "Bed")" class="btn btn-light">Edit Selected Gardens</button>
+                <button type="submit" formaction="@Url.Action("GatherBeds", "Bed")" class="btn btn-light" style="background-color: beige">Edit Selected Gardens</button>
 
         </form>
 </body>

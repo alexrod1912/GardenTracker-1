@@ -9,17 +9,19 @@
     }
     else
     {
-        <form asp-controller="Bed" asp-action="EditBedSubmit" method="post">
+        <form asp-controller="Bed" asp-action="EditBedSubmit" method="post" style="background-color:beige; border: 1px solid">
             @foreach (var bed in Model)
             {
                 <div>
                     <h1>Bed: @bed.Name</h1>
                     <label>Name:</label>
                     <input type="text" name="beds[]" value="@bed.Name" />
+                    <br />
                     <input type="hidden" name="bedIds[]" value="@bed.Id" />
                 </div>
             }
-            <button type="submit" formaction="@Url.Action("EditBedSubmit", "Bed")" class="btn btn-light">Save Changes</button>
+            <br />
+            <button type="submit" formaction="@Url.Action("EditBedSubmit", "Bed")" class="btn btn-light" style="border:1px solid">Save Changes</button>
 
         </form>
     }
